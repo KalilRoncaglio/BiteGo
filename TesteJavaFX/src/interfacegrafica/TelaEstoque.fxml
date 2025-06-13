@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="400" prefWidth="600" style="-fx-background-color: linear-gradient(to bottom, #2e2e2e, #1c1c1c);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TelaEstoqueController">
+
+   <children>
+      <Rectangle arcHeight="30" arcWidth="30" fill="#ffffff1a" height="380" layoutX="10" layoutY="10" stroke="#ffffff33" strokeWidth="1" width="580" />
+
+      <Text fill="white" layoutX="240.0" layoutY="35.0" text="Estoque">
+         <font><Font name="Segoe UI Bold" size="28.0" /></font>
+      </Text>
+
+      <TextField fx:id="campoPesquisa" layoutX="120.0" layoutY="50.0" prefHeight="28.0" prefWidth="350.0" promptText="Pesquisar..." style="-fx-background-radius: 10;" />
+
+      <TableView fx:id="tabelaEstoque" layoutX="20.0" layoutY="90.0" prefHeight="280.0" prefWidth="560.0" style="-fx-background-radius: 10; -fx-border-radius: 10;">
+         <columns>
+            <TableColumn fx:id="colunaId" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="colunaNome" prefWidth="180.0" text="Nome" />
+            <TableColumn fx:id="colunaDescricao" prefWidth="210.0" text="Descrição" />
+            <TableColumn fx:id="colunaPreco" prefWidth="100.0" text="Preço" />
+         </columns>
+      </TableView>
+      <MenuButton fx:id="btnCategoriaEstoque" layoutX="481.0" layoutY="52.0" mnemonicParsing="false" text="Categoria">
+   <items>
+      <MenuItem fx:id="itemTodosEstoque" mnemonicParsing="false" text="Todos" />
+      <MenuItem fx:id="itemLancheEstoque" mnemonicParsing="false" text="Lanche" />
+      <MenuItem fx:id="itemBebidaEstoque" mnemonicParsing="false" text="Bebida" />
+   </items>
+</MenuButton>
+
+   </children>
+</Pane>

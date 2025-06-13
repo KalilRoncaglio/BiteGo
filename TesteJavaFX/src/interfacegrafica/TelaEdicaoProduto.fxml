@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #2e2e2e, #1c1c1c);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TelaEdicaoProdutoController">
+
+    <children>
+        <!-- Fundo semi-transparente com bordas arredondadas -->
+        <Rectangle arcHeight="30" arcWidth="30" fill="#ffffff1a" height="380.0" layoutX="10.0" layoutY="10.0" stroke="#ffffff33" strokeWidth="1.0" width="580.0" />
+
+        <!-- Título -->
+        <Text fill="white" layoutX="180.0" layoutY="50.0" text="Detalhes do Produto">
+            <font>
+                <Font name="Segoe UI Bold" size="28.0" />
+            </font>
+        </Text>
+
+        <!-- Campo ID -->
+        <Label layoutX="50.0" layoutY="90.0" text="ID:" textFill="white" />
+        <TextField fx:id="campoId" editable="false" layoutX="150.0" layoutY="85.0" prefWidth="300.0" />
+
+        <!-- Campo Nome -->
+        <Label layoutX="50.0" layoutY="140.0" text="Nome:" textFill="white" />
+        <TextField fx:id="campoNome" layoutX="150.0" layoutY="135.0" prefWidth="300.0" />
+
+        <!-- Campo Descrição -->
+        <Label layoutX="50.0" layoutY="190.0" text="Descrição:" textFill="white" />
+        <TextField fx:id="campoDescricao" layoutX="150.0" layoutY="185.0" prefWidth="300.0" />
+
+        <!-- Campo Preço -->
+        <Label layoutX="50.0" layoutY="240.0" text="Preço:" textFill="white" />
+        <TextField fx:id="campoPreco" layoutX="150.0" layoutY="235.0" prefWidth="300.0" />
+
+        <!-- Imagem -->
+        <Label layoutX="50.0" layoutY="290.0" text="Imagem:" textFill="white" />
+        <Button fx:id="btnSelecionarImagem" layoutX="150.0" layoutY="285.0" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-background-radius: 10; -fx-cursor: hand;" text="Selecionar Imagem" />
+        <ImageView fx:id="imagemView" fitHeight="100.0" fitWidth="100.0" layoutX="470.0" layoutY="210.0" preserveRatio="true" smooth="true" />
+
+        <!-- Botão Salvar -->
+        <Button fx:id="btnSalvar" layoutX="252.0" layoutY="338.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 10; -fx-cursor: hand;" text="Salvar" />
+    </children>
+</Pane>

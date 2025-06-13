@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #2e2e2e, #1c1c1c);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TelaEditarController">
+
+    <children>
+        <!-- Retângulo de fundo com bordas arredondadas -->
+        <Rectangle arcHeight="30" arcWidth="30" fill="#ffffff1a" height="380" layoutX="10" layoutY="10" stroke="#ffffff33" strokeWidth="1" width="580" />
+      <Text fill="white" layoutX="198.0" layoutY="44.0" text="Editar Produto">
+         <font>
+            <Font name="Segoe UI Bold" size="28.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tabelaEditar" layoutX="20.0" layoutY="64.0" prefHeight="318.0" prefWidth="560.0" style="-fx-background-radius: 10;">
+         <columns>
+            <TableColumn fx:id="colunaId" prefWidth="40.0" text="ID" />
+            <TableColumn fx:id="colunaNome" prefWidth="518.0" text="Nome" />
+         </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+    </children>
+
+</Pane>
