@@ -15,19 +15,18 @@ public class Produto {
         this.imagem = imagem;
     }
 
-    // Construtor alternativo (opcional)
+   
     public Produto(int id, String nome, double preco, String imagem) {
         this(id, nome, "", preco, imagem);
     }
 
-    // Getters
     public int getId() { return id; }
     public String getNome() { return nome; }
     public String getDescricao() { return descricao; }
     public double getPreco() { return preco; }
     public String getImagem() { return imagem; }
 
-    // Setters
+    
     public void setId(int id) { this.id = id; }
     public void setNome(String nome) { this.nome = nome; }
     public void setDescricao(String descricao) { this.descricao = descricao; }
