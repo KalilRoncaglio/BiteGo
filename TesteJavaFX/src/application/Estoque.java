@@ -9,7 +9,7 @@ public class Estoque {
     public Estoque(int id, String nome, String descricao, double preco ) {
         this.id = id;
         this.nome = nome;
-        this.descricaofdsfds = descricao;
+        this.descricao = descricao;
         this.preco = preco;
         
     }
