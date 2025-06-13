@@ -83,7 +83,7 @@ public class TelaEdicaoProdutoController {
 
         btnSalvar.setOnAction(e -> {
             try {
-                // Atualiza dados do objeto
+              
                 produto = new Produto(
                     produto.getId(),
                     campoNome.getText(),
@@ -92,12 +92,12 @@ public class TelaEdicaoProdutoController {
                     caminhoImagemEscolhida
                 );
 
-                // Atualiza no banco de dados
+                // Atualiza no BD
                 boolean sucesso = atualizarProdutoNoBanco(produto);
 
                 if (sucesso) {
                     System.out.println("Produto atualizado com sucesso!");
-                    // Aqui você pode fechar a janela ou exibir uma confirmação para o usuário
+                    
                 } else {
                     System.out.println("Falha ao atualizar o produto.");
                 }
@@ -108,9 +108,9 @@ public class TelaEdicaoProdutoController {
     }
 
     private boolean atualizarProdutoNoBanco(Produto produto) {
-        String url = "jdbc:mysql://localhost:3306/bitesgo"; // ajuste para seu banco
-        String usuario = "root"; // usuário do MySQL
-        String senha = "1234";   // senha do MySQL
+        String url = "jdbc:mysql://localhost:3306/bitesgo"; 
+        String usuario = "root"; 
+        String senha = "1234";   
 
         String sql = "UPDATE produtos SET nome = ?, descricao = ?, preco = ?, imagem = ? WHERE id = ?";
 
